@@ -1,5 +1,5 @@
-function isMAC48Address(n) {
-  return /^([A-F0-9]{2}-){5}[A-F0-9]{2}$/g.test(n);
+function isMAC48Address(/* n */) {
+  throw new Error('Not implemented');
 }
 
 module.exports = isMAC48Address;
