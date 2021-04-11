@@ -1,6 +1,6 @@
 function minesweeper(matrix) {
   const result = [];
-  let count = 0;
+  const count = 0;
   for (let i = 0; i < matrix.length; i++) {
     result.push([]);
     for (let j = 0; j < matrix[i].length; j++) {
