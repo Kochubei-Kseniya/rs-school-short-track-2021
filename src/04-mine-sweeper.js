@@ -6,7 +6,7 @@ function minesweeper(matrix) {
     for (let j = 0; j < matrix[i].length; j++) {
       count = 0;
       // right
-      if (j + 1 < matrix[i].length && matrix[i][j + 1] === true) cell++;
+      if (j + 1 < matrix[i].length && matrix[i][j + 1] === true) count++;
       // bottom right
       if (i + 1 < matrix.length && j + 1 < matrix[i].length && matrix[i + 1][j + 1] === true) {
         count++;
