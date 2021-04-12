@@ -1,11 +1,11 @@
 class Queue {
   constructor() {
-    this.length = 0;
+    this.count = 0;
     this.head = null;
   }
 
   get size() {
-    return this.length;
+    return this.count;
   }
 
   enqueue(element) {
@@ -19,7 +19,7 @@ class Queue {
       }
       currentNode.next = newNode;
     }
-    this.length++;
+    this.count++;
   }
 
   dequeue() {
@@ -28,7 +28,7 @@ class Queue {
       const val = currentNode.value;
       currentNode = currentNode.next;
       this.head = currentNode;
-      this.length--;
+      this.count--;
       return val;
     }
     return null;
