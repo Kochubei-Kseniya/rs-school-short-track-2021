@@ -1,7 +1,7 @@
 function getSumOfDigits(n) {
-  const newArr = n.toString().split('');
+  const nArr = n.toString().split('');
   const digitArr = [];
-  newArr.forEach((el) => digitArr.push(Number(el)));
+  nArr.forEach((v) => digitArr.push(Number(v)));
 
   function getArrSum(arr) {
     let digitSum = 0;
