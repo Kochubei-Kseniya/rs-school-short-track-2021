@@ -1,18 +1,20 @@
 function getSumOfDigits(n) {
-  const nArr = n.toString().split('');
+  const newArr = n.toString().split('');
   const digitArr = [];
-  nArr.forEach((v) => digitArr.push(Number(v)));
+  newArr.forEach((el) => digitArr.push(Number(el)));
 
-  function getArrSum(arr) {
+  function getSum(arr) {
     let digitSum = 0;
     for (let i = 0; i < arr.length; i++) {
       digitSum += arr[i];
     }
     return digitSum;
   }
-  let sum = getArrSum(digitArr);
+  let sum = getSum(digitArr);
   if (sum > 9) {
     sum = getSumOfDigits(sum);
   }
   return sum;
 }
+
+module.exports = getSumOfDigits;
